@@ -1,0 +1,17 @@
+[Inputs]
+Reset
+=Instruction[5:0]=
+[Outputs]
+link
+jump
+RegDst
+ALUSrc
+MemtoReg
+RegWrite
+MemRead
+MemWrite
+Beq
+Bne
+ALUop1
+=ALUop2[2:0]=
+[BiDir]

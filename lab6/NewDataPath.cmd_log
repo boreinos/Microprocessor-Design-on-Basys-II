@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "C:/Users/Boris_2/Documents/MIPS 445/project2/NewDataPath.xst" -ofn "C:/Users/Boris_2/Documents/MIPS 445/project2/NewDataPath.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "NewDataPath.ngc" NewDataPath.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o NewDataPath_map.ncd NewDataPath.ngd NewDataPath.pcf 
+par -w -intstyle ise -ol high -t 1 NewDataPath_map.ncd NewDataPath.ncd NewDataPath.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml NewDataPath.twx NewDataPath.ncd -o NewDataPath.twr NewDataPath.pcf 
+xst -intstyle ise -ifn "C:/Users/Boris_2/Documents/MIPS 445/project2/NewDataPath.xst" -ofn "C:/Users/Boris_2/Documents/MIPS 445/project2/NewDataPath.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "NewDataPath.ngc" NewDataPath.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o NewDataPath_map.ncd NewDataPath.ngd NewDataPath.pcf 
+par -w -intstyle ise -ol high -t 1 NewDataPath_map.ncd NewDataPath.ncd NewDataPath.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml NewDataPath.twx NewDataPath.ncd -o NewDataPath.twr NewDataPath.pcf 
+sch2sym -intstyle ise -family spartan3e -refsym NewDataPath {C:/Users/Boris_2/Documents/MIPS 445/project2/NewDataPath.sch} {C:/Users/Boris_2/Documents/MIPS 445/project2/NewDataPath.sym} 

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/toplevel</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/toplevel(3).vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/toplevel(3).vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/toplevel/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/toplevel(3).vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/toplevel(3).vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ADD</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/ADD.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ADD.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ADD/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/ADD.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ADD.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ALU</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/alu(1).vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/alu(1).vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ALU/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/alu(1).vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/alu(1).vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ALUControl</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/ALUControl.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ALUControl.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ALUControl/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/ALUControl.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ALUControl.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ControlUnit</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/ControlUnit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ControlUnit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ControlUnit/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/ControlUnit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ControlUnit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/datamem</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/datamem(3).vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/datamem(3).vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/datamem/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/datamem(3).vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/datamem(3).vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/FiveBitMux</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/FiveBitMux.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/FiveBitMux.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/FiveBitMux/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/FiveBitMux.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/FiveBitMux.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/instmem</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/instmem(4).vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/instmem(4).vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/instmem/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/instmem(4).vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/instmem(4).vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/linkMux</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/linkMux.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/linkMux.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/linkMux/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/linkMux.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/linkMux.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/MemoryMappedIO</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/MemoryMappedIO.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/MemoryMappedIO.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/MemoryMappedIO/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/MemoryMappedIO.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/MemoryMappedIO.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/PC</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/PC.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/PC.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/PC/Structural</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/PC.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/PC.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/PCADD</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/PCADD.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/PCADD.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/PCADD/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/PCADD.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/PCADD.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/regfile</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/regfile(1).vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/regfile(1).vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/regfile/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/regfile(1).vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/regfile(1).vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/shiftTwo</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/shiftTwo.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/shiftTwo.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/shiftTwo/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/shiftTwo.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/shiftTwo.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/signExtend</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/signExtend.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/signExtend.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/signExtend/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/signExtend.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/signExtend.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/thirtyTwoMux</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/thirtyTwoMux.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/thirtyTwoMux.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/thirtyTwoMux/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/thirtyTwoMux.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/thirtyTwoMux.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/REGEn</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/REGEn.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/REGEn.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/REGEn/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/REGEn.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/REGEn.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/thirty_two_bit_register</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/thirty_two_bit_register.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/thirty_two_bit_register.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/thirty_two_bit_register/Structural</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/thirty_two_bit_register.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/thirty_two_bit_register.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Dflipflop</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/Dflipflop.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/Dflipflop.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Dflipflop/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/Dflipflop.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/Dflipflop.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/DflipflopEn</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/DflipflopEn.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/DflipflopEn.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/DflipflopEn/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/DflipflopEn.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/DflipflopEn.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="old" >&quot;<arg fmt="%s" index="1">Data_Path.vf</arg>&quot; line <arg fmt="%d" index="2">136</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">Carryin</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_17</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">ALUsig</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">read_inst&lt;31:8&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1781" delta="old" >Signal &lt;<arg fmt="%s" index="1">RAM</arg>&gt; is used but never assigned. Tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">sin&lt;31:30&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">address&lt;31:8&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">address&lt;1:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">c32&lt;32:1&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">c32&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">B1</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">A1</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">ALUout&lt;31:8&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">ALUout&lt;1:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_232&lt;31:28&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">temp&lt;7&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_RAM</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_RAM</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_RAM_ren</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+</messages>
+

@@ -1,0 +1,4 @@
+vhdtdtfi -lib work FiveBitMux.vhd -prj project2 -o FiveBitMux.spl -module FiveBitMux -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e FiveBitMux.spl C:/Users/breinosa/Desktop/Project3_Boris_Reinosa/project3/FiveBitMux.sym 
+vhdtdtfi -lib work FiveBitMux.vhd -prj project2 -o FiveBitMux.spl -module FiveBitMux -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e FiveBitMux.spl C:/Users/breinosa/Desktop/Project3_Boris_Reinosa/project3/FiveBitMux.sym 

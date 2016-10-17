@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/xst"
+elaborate
+-ifn MemoryMappedIO.prj
+-ifmt mixed

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/Data_Path_Data_Path_sch_tb_isim_beh.exe" -prj "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/Data_Path_Data_Path_sch_tb_beh.prj" "work.Data_Path_Data_Path_sch_tb" "work.glbl" 

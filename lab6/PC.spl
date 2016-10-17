@@ -1,0 +1,8 @@
+[Inputs]
+enable
+clock
+=Input[31:0]=
+[Outputs]
+=Q[31:0]=
+=pcout[4:0]=
+[BiDir]

@@ -1,0 +1,4 @@
+vhdtdtfi -lib work signExtend.vhd -prj project2 -o signExtend.spl -module signExtend -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e signExtend.spl C:/Users/breinosa/Desktop/Project3_Boris_Reinosa/project3/signExtend.sym 
+vhdtdtfi -lib work signExtend.vhd -prj project2 -o signExtend.spl -module signExtend -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e signExtend.spl C:/Users/breinosa/Desktop/Project3_Boris_Reinosa/project3/signExtend.sym 

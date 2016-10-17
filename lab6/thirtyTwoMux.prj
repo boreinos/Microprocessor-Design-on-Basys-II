@@ -1,0 +1,3 @@
+vhdl work "thirtyTwoMux.vhd"
+verilog work "DataPath.vf"
+verilog work "NewDataPath.vf"

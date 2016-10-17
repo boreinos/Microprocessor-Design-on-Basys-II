@@ -1,0 +1,3 @@
+vhdl work "ADD.vhd"
+verilog work "DataPath.vf"
+verilog work "NewDataPath.vf"

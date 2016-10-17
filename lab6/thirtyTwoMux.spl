@@ -1,0 +1,7 @@
+[Inputs]
+sel
+=MZero[31:0]=
+=MOne[31:0]=
+[Outputs]
+=MOut[31:0]=
+[BiDir]

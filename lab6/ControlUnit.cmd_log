@@ -1,0 +1,16 @@
+vhdtdtfi -lib work ControlUnit.vhd -prj project2 -o ControlUnit.spl -module ControlUnit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ControlUnit.spl C:/Users/vslabsal/Desktop/lab2/project2/ControlUnit.sym 
+vhdtdtfi -lib work ControlUnit.vhd -prj project2 -o ControlUnit.spl -module ControlUnit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ControlUnit.spl C:/Users/breinosa/Desktop/Project3_Boris_Reinosa/project3/ControlUnit.sym 
+vhdtdtfi -lib work ControlUnit.vhd -prj project2 -o ControlUnit.spl -module ControlUnit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ControlUnit.spl C:/Users/breinosa/Desktop/Project3_Boris_Reinosa/project3/ControlUnit.sym 
+vhdtdtfi -lib work ControlUnit.vhd -prj Lab4 -o ControlUnit.spl -module ControlUnit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ControlUnit.spl {C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/ControlUnit.sym} 
+vhdtdtfi -lib work ControlUnit.vhd -prj Lab4 -o ControlUnit.spl -module ControlUnit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ControlUnit.spl {C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/ControlUnit.sym} 
+vhdtdtfi -lib work ControlUnit.vhd -prj Lab4 -o ControlUnit.spl -module ControlUnit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ControlUnit.spl {C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/ControlUnit.sym} 
+vhdtdtfi -lib work ControlUnit.vhd -prj Lab4 -o ControlUnit.spl -module ControlUnit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ControlUnit.spl {C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/ControlUnit.sym} 
+vhdtdtfi -lib work ControlUnit.vhd -prj Lab4 -o ControlUnit.spl -module ControlUnit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ControlUnit.spl {C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/ControlUnit.sym} 

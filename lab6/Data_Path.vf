@@ -1,0 +1,191 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Data_Path.vf
+// /___/   /\     Timestamp : 12/06/2015 21:43:25
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/Data_Path.vf" -w "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/Data_Path.sch"
+//Design Name: Data_Path
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Data_Path(clock, 
+                 Din, 
+                 reset, 
+                 Carryout, 
+                 Dout, 
+                 Overflow, 
+                 pcout, 
+                 Zero);
+
+    input clock;
+    input [7:0] Din;
+    input reset;
+   output Carryout;
+   output [31:0] Dout;
+   output Overflow;
+   output [4:0] pcout;
+   output Zero;
+   
+   wire [31:0] XLXN_43;
+   wire [3:0] XLXN_48;
+   wire [31:0] XLXN_49;
+   wire [31:0] XLXN_51;
+   wire [31:0] XLXN_53;
+   wire [31:0] XLXN_56;
+   wire [31:0] XLXN_61;
+   wire XLXN_67;
+   wire [2:0] XLXN_74;
+   wire [31:0] XLXN_103;
+   wire [31:0] XLXN_136;
+   wire [31:0] XLXN_139;
+   wire XLXN_140;
+   wire XLXN_145;
+   wire XLXN_146;
+   wire XLXN_163;
+   wire XLXN_174;
+   wire XLXN_180;
+   wire XLXN_191;
+   wire XLXN_192;
+   wire [31:0] XLXN_232;
+   wire XLXN_242;
+   wire [31:0] XLXN_245;
+   wire XLXN_253;
+   wire [4:0] XLXN_256;
+   wire [4:0] XLXN_257;
+   wire [31:0] XLXN_259;
+   wire [31:0] XLXN_262;
+   wire [31:0] XLXN_263;
+   wire [31:0] XLXN_264;
+   wire XLXN_266;
+   wire XLXN_372;
+   wire XLXN_434;
+   wire XLXN_450;
+   wire XLXN_459;
+   wire [31:0] XLXN_461;
+   wire [31:0] XLXN_465;
+   wire [31:0] XLXN_468;
+   wire Zero_DUMMY;
+   
+   assign Zero = Zero_DUMMY;
+   ALUControl  XLXI_1 (.ALUop1(XLXN_266), 
+                      .ALuop2(XLXN_74[2:0]), 
+                      .Din(XLXN_103[5:0]), 
+                      .Dout(XLXN_48[3:0]), 
+                      .jr(XLXN_372));
+   ADD  XLXI_3 (.DinA(XLXN_53[31:0]), 
+               .DinB(XLXN_51[31:0]), 
+               .Dout(XLXN_56[31:0]));
+   FiveBitMux  XLXI_5 (.MOne(XLXN_103[15:11]), 
+                      .MZero(XLXN_103[20:16]), 
+                      .sel(XLXN_174), 
+                      .MOut(XLXN_256[4:0]));
+   PC  XLXI_6 (.clock(clock), 
+              .enable(reset), 
+              .Input(XLXN_263[31:0]), 
+              .pcout(pcout[4:0]), 
+              .Q(XLXN_136[31:0]));
+   PCADD  XLXI_7 (.Din(XLXN_136[31:0]), 
+                 .Dout(XLXN_53[31:0]));
+   instmem  XLXI_8 (.read_inst(XLXN_136[31:0]), 
+                   .inst_out(XLXN_103[31:0]));
+   regfile  XLXI_9 (.clock(clock), 
+                   .read_reg1(XLXN_103[25:21]), 
+                   .read_reg2(XLXN_103[20:16]), 
+                   .RegWrite(XLXN_180), 
+                   .write_data(XLXN_262[31:0]), 
+                   .write_reg(XLXN_257[4:0]), 
+                   .read_data1(XLXN_139[31:0]), 
+                   .read_data2(XLXN_61[31:0]));
+   signExtend  XLXI_10 (.sigExin(XLXN_103[15:0]), 
+                       .sigExout(XLXN_49[31:0]));
+   shiftTwo  XLXI_11 (.sin(XLXN_49[31:0]), 
+                     .sout(XLXN_51[31:0]));
+   thirtyTwoMux  XLXI_12 (.MOne(XLXN_49[31:0]), 
+                         .MZero(XLXN_61[31:0]), 
+                         .sel(XLXN_67), 
+                         .MOut(XLXN_43[31:0]));
+   thirtyTwoMux  XLXI_13 (.MOne(XLXN_468[31:0]), 
+                         .MZero(XLXN_461[31:0]), 
+                         .sel(XLXN_140), 
+                         .MOut(XLXN_259[31:0]));
+   datamem  XLXI_14 (.address(XLXN_461[31:0]), 
+                    .clock(clock), 
+                    .MemRead(XLXN_192), 
+                    .MemWrite(XLXN_191), 
+                    .write_data(XLXN_61[31:0]), 
+                    .Read_data(XLXN_465[31:0]));
+   thirtyTwoMux  XLXI_15 (.MOne(XLXN_56[31:0]), 
+                         .MZero(XLXN_53[31:0]), 
+                         .sel(XLXN_459), 
+                         .MOut(XLXN_264[31:0]));
+   AND2  XLXI_16 (.I0(Zero_DUMMY), 
+                 .I1(XLXN_450), 
+                 .O(XLXN_146));
+   ALU  XLXI_17 (.A(XLXN_139[31:0]), 
+                .ALUCntl(XLXN_48[3:0]), 
+                .B(XLXN_43[31:0]), 
+                .Carryin(), 
+                .Carryout(Carryout), 
+                .dout(XLXN_461[31:0]), 
+                .Overflow(Overflow), 
+                .Zero(Zero_DUMMY));
+   AND2  XLXI_18 (.I0(XLXN_434), 
+                 .I1(XLXN_163), 
+                 .O(XLXN_145));
+   INV  XLXI_19 (.I(Zero_DUMMY), 
+                .O(XLXN_434));
+   OR2  XLXI_20 (.I0(XLXN_145), 
+                .I1(XLXN_146), 
+                .O(XLXN_459));
+   ControlUnit  XLXI_21 (.Instruction(XLXN_103[31:26]), 
+                        .Reset(reset), 
+                        .ALUop1(XLXN_266), 
+                        .ALUop2(XLXN_74[2:0]), 
+                        .ALUSrc(XLXN_67), 
+                        .Beq(XLXN_450), 
+                        .Bne(XLXN_163), 
+                        .jump(XLXN_242), 
+                        .link(XLXN_253), 
+                        .MemRead(XLXN_192), 
+                        .MemtoReg(XLXN_140), 
+                        .MemWrite(XLXN_191), 
+                        .RegDst(XLXN_174), 
+                        .RegWrite(XLXN_180));
+   thirtyTwoMux  XLXI_22 (.MOne({XLXN_53[31:28], XLXN_232[27:0]}), 
+                         .MZero(XLXN_264[31:0]), 
+                         .sel(XLXN_242), 
+                         .MOut(XLXN_245[31:0]));
+   thirtyTwoMux  XLXI_23 (.MOne(XLXN_461[31:0]), 
+                         .MZero(XLXN_245[31:0]), 
+                         .sel(XLXN_372), 
+                         .MOut(XLXN_263[31:0]));
+   thirtyTwoMux  XLXI_24 (.MOne(XLXN_53[31:0]), 
+                         .MZero(XLXN_259[31:0]), 
+                         .sel(XLXN_253), 
+                         .MOut(XLXN_262[31:0]));
+   linkMux  XLXI_25 (.link(XLXN_253), 
+                    .reg1(XLXN_256[4:0]), 
+                    .regout(XLXN_257[4:0]));
+   shiftTwo  XLXI_26 (.sin(XLXN_103[31:0]), 
+                     .sout(XLXN_232[31:0]));
+   MemoryMappedIO  XLXI_72 (.ALUout(XLXN_461[31:0]), 
+                           .clock(clock), 
+                           .Data2(XLXN_61[31:0]), 
+                           .DinSwtchs(Din[7:0]), 
+                           .MemWrite(XLXN_191), 
+                           .Read_data(XLXN_465[31:0]), 
+                           .Dout(Dout[31:0]), 
+                           .Memout(XLXN_468[31:0]));
+endmodule

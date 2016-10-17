@@ -1,0 +1,4 @@
+vhdtdtfi -lib work Dflipflop.vhd -lib work thirty_two_bit_register.vhd -lib work PC.vhd -prj project2 -o PC.spl -module PC -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PC.spl C:/Users/vslabsal/Desktop/lab2/project2/PC.sym 
+vhdtdtfi -lib work Dflipflop.vhd -lib work thirty_two_bit_register.vhd -lib work PC.vhd -prj project2 -o PC.spl -module PC -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PC.spl {C:/Users/Boris_2/Documents/MIPS 445/project2/PC.sym} 

@@ -1,0 +1,677 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: NewDataPath.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "NewDataPath.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "NewDataPath"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : NewDataPath
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/project2/Dflipflop.vhd" in Library work.
+Architecture behavioral of Entity dflipflop is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/project2/thirty_two_bit_register.vhd" in Library work.
+Architecture structural of Entity thirty_two_bit_register is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/project2/alu(1).vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/project2/ALUControl.vhd" in Library work.
+Architecture behavioral of Entity alucontrol is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/project2/ControlUnit.vhd" in Library work.
+Architecture behavioral of Entity controlunit is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/project2/instmem(1).vhd" in Library work.
+Architecture behavioral of Entity instmem is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/project2/PC.vhd" in Library work.
+Architecture structural of Entity pc is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/project2/PCADD.vhd" in Library work.
+Architecture behavioral of Entity pcadd is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/project2/regfile.vhd" in Library work.
+Architecture behavioral of Entity regfile is up to date.
+Compiling verilog file "NewDataPath.vf" in library work
+Module <NewDataPath> compiled
+No errors in compilation
+Analysis of file <"NewDataPath.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <NewDataPath> in library <work>.
+
+Analyzing hierarchy for entity <alu> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <alucontrol> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <pc> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <pcadd> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <instmem> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <regfile> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <controlunit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <thirty_two_bit_register> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <Dflipflop> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <NewDataPath>.
+WARNING:Xst:852 - "NewDataPath.vf" line 49: Unconnected input port 'Carryin' of instance 'XLXI_1' is tied to GND.
+Module <NewDataPath> is correct for synthesis.
+ 
+Analyzing Entity <alu> in library <work> (Architecture <behavioral>).
+Entity <alu> analyzed. Unit <alu> generated.
+
+Analyzing Entity <alucontrol> in library <work> (Architecture <behavioral>).
+Entity <alucontrol> analyzed. Unit <alucontrol> generated.
+
+Analyzing Entity <pc> in library <work> (Architecture <structural>).
+Entity <pc> analyzed. Unit <pc> generated.
+
+Analyzing Entity <thirty_two_bit_register> in library <work> (Architecture <structural>).
+Entity <thirty_two_bit_register> analyzed. Unit <thirty_two_bit_register> generated.
+
+Analyzing Entity <Dflipflop> in library <work> (Architecture <Behavioral>).
+Entity <Dflipflop> analyzed. Unit <Dflipflop> generated.
+
+Analyzing Entity <pcadd> in library <work> (Architecture <behavioral>).
+Entity <pcadd> analyzed. Unit <pcadd> generated.
+
+Analyzing Entity <instmem> in library <work> (Architecture <behavioral>).
+WARNING:Xst:790 - "C:/Users/Boris_2/Documents/MIPS 445/project2/instmem(1).vhd" line 56: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1607 - Contents of array <RAM> may be accessed with an index that does not cover the full array size.
+WARNING:Xst:790 - "C:/Users/Boris_2/Documents/MIPS 445/project2/instmem(1).vhd" line 57: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1607 - Contents of array <RAM> may be accessed with an index that does not cover the full array size.
+WARNING:Xst:790 - "C:/Users/Boris_2/Documents/MIPS 445/project2/instmem(1).vhd" line 58: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1607 - Contents of array <RAM> may be accessed with an index that does not cover the full array size.
+WARNING:Xst:790 - "C:/Users/Boris_2/Documents/MIPS 445/project2/instmem(1).vhd" line 59: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1607 - Contents of array <RAM> may be accessed with an index that does not cover the full array size.
+Entity <instmem> analyzed. Unit <instmem> generated.
+
+Analyzing Entity <regfile> in library <work> (Architecture <behavioral>).
+Entity <regfile> analyzed. Unit <regfile> generated.
+
+Analyzing Entity <controlunit> in library <work> (Architecture <behavioral>).
+Entity <controlunit> analyzed. Unit <controlunit> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <alu>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/project2/alu(1).vhd".
+WARNING:Xst:1780 - Signal <c32<32:1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <c32<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <B1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <A1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit tristate buffer for signal <Carryout>.
+    Found 1-bit tristate buffer for signal <Overflow>.
+    Found 33-bit adder for signal <add_result>.
+    Found 32-bit xor2 for signal <ALU_Result$xor0000> created at line 30.
+    Found 32-bit comparator less for signal <less_signal<0>>.
+    Found 33-bit subtractor for signal <sub_result>.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred   2 Tristate(s).
+Unit <alu> synthesized.
+
+
+Synthesizing Unit <alucontrol>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/project2/ALUControl.vhd".
+    Found 16x4-bit ROM for signal <Dout$mux0000>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <alucontrol> synthesized.
+
+
+Synthesizing Unit <pcadd>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/project2/PCADD.vhd".
+    Found 32-bit adder for signal <Dout>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <pcadd> synthesized.
+
+
+Synthesizing Unit <instmem>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/project2/instmem(1).vhd".
+WARNING:Xst:1781 - Signal <RAM> is used but never assigned. Tied to default value.
+    Found 52x8-bit ROM for signal <inst_out_23_16$varindex0000> created at line 58.
+    Found 52x8-bit ROM for signal <inst_out_31_24$varindex0000> created at line 59.
+    Found 52x8-bit ROM for signal <inst_out_7_0$varindex0000> created at line 56.
+    Found 52x8-bit ROM for signal <inst_out_15_8$varindex0000> created at line 57.
+    Found 32-bit adder for signal <RAM$add0000> created at line 56.
+    Found 32-bit adder for signal <RAM$add0001> created at line 57.
+    Found 32-bit adder for signal <RAM$add0002> created at line 58.
+    Summary:
+	inferred   4 ROM(s).
+	inferred   3 Adder/Subtractor(s).
+Unit <instmem> synthesized.
+
+
+Synthesizing Unit <regfile>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/project2/regfile.vhd".
+    Found 32x32-bit dual-port RAM <Mram_RAM> for signal <RAM>.
+    Found 32x32-bit dual-port RAM <Mram_RAM_ren> for signal <RAM>.
+    Summary:
+	inferred   2 RAM(s).
+Unit <regfile> synthesized.
+
+
+Synthesizing Unit <controlunit>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/project2/ControlUnit.vhd".
+Unit <controlunit> synthesized.
+
+
+Synthesizing Unit <Dflipflop>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/project2/Dflipflop.vhd".
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Dflipflop> synthesized.
+
+
+Synthesizing Unit <thirty_two_bit_register>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/project2/thirty_two_bit_register.vhd".
+Unit <thirty_two_bit_register> synthesized.
+
+
+Synthesizing Unit <pc>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/project2/PC.vhd".
+Unit <pc> synthesized.
+
+
+Synthesizing Unit <NewDataPath>.
+    Related source file is "NewDataPath.vf".
+WARNING:Xst:646 - Signal <inst_out<10:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <NewDataPath> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port RAM                               : 2
+# ROMs                                                 : 5
+ 16x4-bit ROM                                          : 1
+ 52x8-bit ROM                                          : 4
+# Adders/Subtractors                                   : 6
+ 32-bit adder                                          : 4
+ 33-bit adder                                          : 1
+ 33-bit subtractor                                     : 1
+# Registers                                            : 32
+ 1-bit register                                        : 32
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+# Tristates                                            : 2
+ 1-bit tristate buffer                                 : 2
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <regfile>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <RegWrite>      | high     |
+    |     addrA          | connected to signal <write_reg>     |          |
+    |     diA            | connected to signal <write_data>    |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <read_reg1>     |          |
+    |     doB            | connected to signal <read_data1>    |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM_ren> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <RegWrite>      | high     |
+    |     addrA          | connected to signal <write_reg>     |          |
+    |     diA            | connected to signal <write_data>    |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <read_reg2>     |          |
+    |     doB            | connected to signal <read_data2>    |          |
+    -----------------------------------------------------------------------
+Unit <regfile> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port distributed RAM                   : 2
+# ROMs                                                 : 5
+ 16x4-bit ROM                                          : 1
+ 52x8-bit ROM                                          : 4
+# Adders/Subtractors                                   : 6
+ 32-bit adder                                          : 1
+ 33-bit adder                                          : 1
+ 33-bit subtractor                                     : 1
+ 6-bit adder                                           : 3
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <NewDataPath> ...
+
+Optimizing unit <thirty_two_bit_register> ...
+WARNING:Xst:1710 - FF/Latch <XLXI_3/REG/Gen_Thirty_Two[0].REGX/Q> (without init value) has a constant value of 0 in block <NewDataPath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/REG/Gen_Thirty_Two[1].REGX/Q> (without init value) has a constant value of 0 in block <NewDataPath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[7].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[8].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[9].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[10].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[11].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[12].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[13].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[14].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[15].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[16].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[17].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[18].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[19].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[20].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[21].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[22].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[23].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[24].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[25].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[26].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[27].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[28].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[29].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[30].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+WARNING:Xst:2677 - Node <XLXI_3/REG/Gen_Thirty_Two[31].REGX/Q> of sequential type is unconnected in block <NewDataPath>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block NewDataPath, actual ratio is 31.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 5
+ Flip-Flops                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : NewDataPath.ngr
+Top Level Output File Name         : NewDataPath
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 42
+
+Cell Usage :
+# BELS                             : 626
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 11
+#      LUT2                        : 7
+#      LUT2_D                      : 1
+#      LUT2_L                      : 27
+#      LUT3                        : 9
+#      LUT4                        : 322
+#      LUT4_D                      : 6
+#      LUT4_L                      : 11
+#      MUXCY                       : 108
+#      MUXF5                       : 39
+#      MUXF6                       : 9
+#      VCC                         : 1
+#      XORCY                       : 70
+# FlipFlops/Latches                : 5
+#      FDC                         : 5
+# RAMS                             : 128
+#      RAM16X1D                    : 128
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 41
+#      IBUF                        : 1
+#      OBUF                        : 38
+#      OBUFT                       : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                      292  out of    960    30%  
+ Number of Slice Flip Flops:              5  out of   1920     0%  
+ Number of 4 input LUTs:                654  out of   1920    34%  
+    Number used as logic:               398
+    Number used as RAMs:                256
+ Number of IOs:                          42
+ Number of bonded IOBs:                  42  out of     83    50%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 133   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 5     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 11.790ns (Maximum Frequency: 84.821MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 17.068ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 11.790ns (frequency: 84.821MHz)
+  Total number of paths / destination ports: 600967 / 1285
+-------------------------------------------------------------------------
+Delay:               11.790ns (Levels of Logic = 40)
+  Source:            XLXI_3/REG/Gen_Thirty_Two[3].REGX/Q (FF)
+  Destination:       XLXI_6/Mram_RAM_ren63 (RAM)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: XLXI_3/REG/Gen_Thirty_Two[3].REGX/Q to XLXI_6/Mram_RAM_ren63
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             19   0.514   1.074  XLXI_3/REG/Gen_Thirty_Two[3].REGX/Q (XLXI_3/REG/Gen_Thirty_Two[3].REGX/Q)
+     LUT1:I0->O            1   0.612   0.000  XLXI_5/Mrom_inst_out_31_24_varindex0000_f5_rt (XLXI_5/Mrom_inst_out_31_24_varindex0000_f5_rt)
+     MUXF5:I0->O           1   0.278   0.000  XLXI_5/Mrom_inst_out_31_24_varindex0000_f5 (XLXI_5/Mrom_inst_out_31_24_varindex0000_f5)
+     MUXF6:I0->O          64   0.451   1.081  XLXI_5/Mrom_inst_out_31_24_varindex0000_f6 (XLXI_5/Mrom_inst_out_31_24_varindex0000_f6)
+     RAM16X1D:DPRA3->DPO    1   0.612   0.387  XLXI_6/Mram_RAM2 (N147)
+     LUT4:I2->O            7   0.612   0.605  inst_LPM_MUX3211 (XLXN_38<0>)
+     LUT4:I3->O            1   0.612   0.000  XLXI_1/Madd_add_result_lut<0>1 (XLXI_1/Madd_add_result_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  XLXI_1/Madd_add_result_cy<0> (XLXI_1/Madd_add_result_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_1/Madd_add_result_cy<1> (XLXI_1/Madd_add_result_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_1/Madd_add_result_cy<2> (XLXI_1/Madd_add_result_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_1/Madd_add_result_cy<3> (XLXI_1/Madd_add_result_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_1/Madd_add_result_cy<4> (XLXI_1/Madd_add_result_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_1/Madd_add_result_cy<5> (XLXI_1/Madd_add_result_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_1/Madd_add_result_cy<6> (XLXI_1/Madd_add_result_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_1/Madd_add_result_cy<7> (XLXI_1/Madd_add_result_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_1/Madd_add_result_cy<8> (XLXI_1/Madd_add_result_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_1/Madd_add_result_cy<9> (XLXI_1/Madd_add_result_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_1/Madd_add_result_cy<10> (XLXI_1/Madd_add_result_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<11> (XLXI_1/Madd_add_result_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<12> (XLXI_1/Madd_add_result_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<13> (XLXI_1/Madd_add_result_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<14> (XLXI_1/Madd_add_result_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<15> (XLXI_1/Madd_add_result_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<16> (XLXI_1/Madd_add_result_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<17> (XLXI_1/Madd_add_result_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<18> (XLXI_1/Madd_add_result_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<19> (XLXI_1/Madd_add_result_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<20> (XLXI_1/Madd_add_result_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<21> (XLXI_1/Madd_add_result_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<22> (XLXI_1/Madd_add_result_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<23> (XLXI_1/Madd_add_result_cy<23>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<24> (XLXI_1/Madd_add_result_cy<24>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<25> (XLXI_1/Madd_add_result_cy<25>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<26> (XLXI_1/Madd_add_result_cy<26>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<27> (XLXI_1/Madd_add_result_cy<27>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<28> (XLXI_1/Madd_add_result_cy<28>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<29> (XLXI_1/Madd_add_result_cy<29>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<30> (XLXI_1/Madd_add_result_cy<30>)
+     XORCY:CI->O           1   0.699   0.360  XLXI_1/Madd_add_result_xor<31> (XLXI_1/add_result<31>)
+     LUT4:I3->O            1   0.612   0.387  XLXI_1/ALU_Result<31>82 (XLXI_1/ALU_Result<31>82)
+     LUT4:I2->O            7   0.612   0.000  XLXI_1/ALU_Result<31>95 (ALUOut_31_OBUF)
+     RAM16X1D:D                0.332          XLXI_6/Mram_RAM_ren63
+    ----------------------------------------
+    Total                     11.790ns (7.895ns logic, 3.895ns route)
+                                       (67.0% logic, 33.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 325954 / 40
+-------------------------------------------------------------------------
+Offset:              17.068ns (Levels of Logic = 43)
+  Source:            XLXI_3/REG/Gen_Thirty_Two[3].REGX/Q (FF)
+  Destination:       zero (PAD)
+  Source Clock:      clock rising
+
+  Data Path: XLXI_3/REG/Gen_Thirty_Two[3].REGX/Q to zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             19   0.514   1.074  XLXI_3/REG/Gen_Thirty_Two[3].REGX/Q (XLXI_3/REG/Gen_Thirty_Two[3].REGX/Q)
+     LUT1:I0->O            1   0.612   0.000  XLXI_5/Mrom_inst_out_31_24_varindex0000_f5_rt (XLXI_5/Mrom_inst_out_31_24_varindex0000_f5_rt)
+     MUXF5:I0->O           1   0.278   0.000  XLXI_5/Mrom_inst_out_31_24_varindex0000_f5 (XLXI_5/Mrom_inst_out_31_24_varindex0000_f5)
+     MUXF6:I0->O          64   0.451   1.081  XLXI_5/Mrom_inst_out_31_24_varindex0000_f6 (XLXI_5/Mrom_inst_out_31_24_varindex0000_f6)
+     RAM16X1D:DPRA3->DPO    1   0.612   0.387  XLXI_6/Mram_RAM2 (N147)
+     LUT4:I2->O            7   0.612   0.605  inst_LPM_MUX3211 (XLXN_38<0>)
+     LUT4:I3->O            1   0.612   0.000  XLXI_1/Madd_add_result_lut<0>1 (XLXI_1/Madd_add_result_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  XLXI_1/Madd_add_result_cy<0> (XLXI_1/Madd_add_result_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<1> (XLXI_1/Madd_add_result_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<2> (XLXI_1/Madd_add_result_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<3> (XLXI_1/Madd_add_result_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<4> (XLXI_1/Madd_add_result_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<5> (XLXI_1/Madd_add_result_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<6> (XLXI_1/Madd_add_result_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<7> (XLXI_1/Madd_add_result_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<8> (XLXI_1/Madd_add_result_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<9> (XLXI_1/Madd_add_result_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<10> (XLXI_1/Madd_add_result_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<11> (XLXI_1/Madd_add_result_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<12> (XLXI_1/Madd_add_result_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<13> (XLXI_1/Madd_add_result_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<14> (XLXI_1/Madd_add_result_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<15> (XLXI_1/Madd_add_result_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<16> (XLXI_1/Madd_add_result_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<17> (XLXI_1/Madd_add_result_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<18> (XLXI_1/Madd_add_result_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<19> (XLXI_1/Madd_add_result_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<20> (XLXI_1/Madd_add_result_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<21> (XLXI_1/Madd_add_result_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<22> (XLXI_1/Madd_add_result_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Madd_add_result_cy<23> (XLXI_1/Madd_add_result_cy<23>)
+     XORCY:CI->O           1   0.699   0.360  XLXI_1/Madd_add_result_xor<24> (XLXI_1/add_result<24>)
+     LUT4:I3->O            1   0.612   0.387  XLXI_1/ALU_Result<24>82 (XLXI_1/ALU_Result<24>82)
+     LUT4:I2->O            6   0.612   0.721  XLXI_1/ALU_Result<24>95 (ALUOut_24_OBUF)
+     LUT4:I0->O            1   0.612   0.000  XLXI_1/Zero_cmp_eq0000_wg_lut<0> (XLXI_1/Zero_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  XLXI_1/Zero_cmp_eq0000_wg_cy<0> (XLXI_1/Zero_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_1/Zero_cmp_eq0000_wg_cy<1> (XLXI_1/Zero_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_1/Zero_cmp_eq0000_wg_cy<2> (XLXI_1/Zero_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_1/Zero_cmp_eq0000_wg_cy<3> (XLXI_1/Zero_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_1/Zero_cmp_eq0000_wg_cy<4> (XLXI_1/Zero_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Zero_cmp_eq0000_wg_cy<5> (XLXI_1/Zero_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Zero_cmp_eq0000_wg_cy<6> (XLXI_1/Zero_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O           1   0.399   0.357  XLXI_1/Zero_cmp_eq0000_wg_cy<7> (zero_OBUF)
+     OBUF:I->O                 3.169          zero_OBUF (zero)
+    ----------------------------------------
+    Total                     17.068ns (12.096ns logic, 4.972ns route)
+                                       (70.9% logic, 29.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.52 secs
+ 
+--> 
+
+Total memory usage is 285092 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   38 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

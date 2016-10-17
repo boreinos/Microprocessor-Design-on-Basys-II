@@ -1,0 +1,3 @@
+vhdl work "Dflipflop.vhd"
+vhdl work "thirty_two_bit_register.vhd"
+vhdl work "MemoryMappedIO.vhd"

@@ -1,0 +1,942 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: toplevel.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "toplevel.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "toplevel"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : toplevel
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/toplevel is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/toplevel(3).vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/toplevel(3).vhd".
+WARNING:HDLParsers:3607 - Unit work/toplevel/Behavioral is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/toplevel(3).vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/toplevel(3).vhd".
+WARNING:HDLParsers:3607 - Unit work/ADD is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/ADD.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ADD.vhd".
+WARNING:HDLParsers:3607 - Unit work/ADD/Behavioral is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/ADD.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ADD.vhd".
+WARNING:HDLParsers:3607 - Unit work/ALU is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/alu(1).vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/alu(1).vhd".
+WARNING:HDLParsers:3607 - Unit work/ALU/Behavioral is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/alu(1).vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/alu(1).vhd".
+WARNING:HDLParsers:3607 - Unit work/ALUControl is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/ALUControl.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ALUControl.vhd".
+WARNING:HDLParsers:3607 - Unit work/ALUControl/Behavioral is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/ALUControl.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ALUControl.vhd".
+WARNING:HDLParsers:3607 - Unit work/ControlUnit is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/ControlUnit.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ControlUnit.vhd".
+WARNING:HDLParsers:3607 - Unit work/ControlUnit/Behavioral is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/ControlUnit.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ControlUnit.vhd".
+WARNING:HDLParsers:3607 - Unit work/datamem is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/datamem(3).vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/datamem(3).vhd".
+WARNING:HDLParsers:3607 - Unit work/datamem/Behavioral is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/datamem(3).vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/datamem(3).vhd".
+WARNING:HDLParsers:3607 - Unit work/FiveBitMux is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/FiveBitMux.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/FiveBitMux.vhd".
+WARNING:HDLParsers:3607 - Unit work/FiveBitMux/Behavioral is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/FiveBitMux.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/FiveBitMux.vhd".
+WARNING:HDLParsers:3607 - Unit work/instmem is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/instmem(4).vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/instmem(4).vhd".
+WARNING:HDLParsers:3607 - Unit work/instmem/Behavioral is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/instmem(4).vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/instmem(4).vhd".
+WARNING:HDLParsers:3607 - Unit work/linkMux is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/linkMux.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/linkMux.vhd".
+WARNING:HDLParsers:3607 - Unit work/linkMux/Behavioral is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/linkMux.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/linkMux.vhd".
+WARNING:HDLParsers:3607 - Unit work/MemoryMappedIO is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/MemoryMappedIO.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/MemoryMappedIO.vhd".
+WARNING:HDLParsers:3607 - Unit work/MemoryMappedIO/Behavioral is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/MemoryMappedIO.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/MemoryMappedIO.vhd".
+WARNING:HDLParsers:3607 - Unit work/PC is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/PC.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/PC.vhd".
+WARNING:HDLParsers:3607 - Unit work/PC/Structural is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/PC.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/PC.vhd".
+WARNING:HDLParsers:3607 - Unit work/PCADD is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/PCADD.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/PCADD.vhd".
+WARNING:HDLParsers:3607 - Unit work/PCADD/Behavioral is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/PCADD.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/PCADD.vhd".
+WARNING:HDLParsers:3607 - Unit work/regfile is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/regfile(1).vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/regfile(1).vhd".
+WARNING:HDLParsers:3607 - Unit work/regfile/Behavioral is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/regfile(1).vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/regfile(1).vhd".
+WARNING:HDLParsers:3607 - Unit work/shiftTwo is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/shiftTwo.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/shiftTwo.vhd".
+WARNING:HDLParsers:3607 - Unit work/shiftTwo/Behavioral is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/shiftTwo.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/shiftTwo.vhd".
+WARNING:HDLParsers:3607 - Unit work/signExtend is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/signExtend.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/signExtend.vhd".
+WARNING:HDLParsers:3607 - Unit work/signExtend/Behavioral is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/signExtend.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/signExtend.vhd".
+WARNING:HDLParsers:3607 - Unit work/thirtyTwoMux is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/thirtyTwoMux.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/thirtyTwoMux.vhd".
+WARNING:HDLParsers:3607 - Unit work/thirtyTwoMux/Behavioral is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/thirtyTwoMux.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/thirtyTwoMux.vhd".
+WARNING:HDLParsers:3607 - Unit work/REGEn is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/REGEn.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/REGEn.vhd".
+WARNING:HDLParsers:3607 - Unit work/REGEn/Behavioral is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/REGEn.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/REGEn.vhd".
+WARNING:HDLParsers:3607 - Unit work/thirty_two_bit_register is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/thirty_two_bit_register.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/thirty_two_bit_register.vhd".
+WARNING:HDLParsers:3607 - Unit work/thirty_two_bit_register/Structural is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/thirty_two_bit_register.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/thirty_two_bit_register.vhd".
+WARNING:HDLParsers:3607 - Unit work/Dflipflop is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/Dflipflop.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/Dflipflop.vhd".
+WARNING:HDLParsers:3607 - Unit work/Dflipflop/Behavioral is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/Dflipflop.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/Dflipflop.vhd".
+WARNING:HDLParsers:3607 - Unit work/DflipflopEn is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/DflipflopEn.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/DflipflopEn.vhd".
+WARNING:HDLParsers:3607 - Unit work/DflipflopEn/Behavioral is now defined in a different file.  It was defined in "C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/DflipflopEn.vhd", and is now defined in "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/DflipflopEn.vhd".
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/Dflipflop.vhd" in Library work.
+Architecture behavioral of Entity dflipflop is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/DflipflopEn.vhd" in Library work.
+Architecture behavioral of Entity dflipflopen is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/thirty_two_bit_register.vhd" in Library work.
+Architecture structural of Entity thirty_two_bit_register is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/REGEn.vhd" in Library work.
+Architecture behavioral of Entity regen is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/toplevel(3).vhd" in Library work.
+Architecture behavioral of Entity toplevel is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ADD.vhd" in Library work.
+Architecture behavioral of Entity add is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/alu(1).vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ALUControl.vhd" in Library work.
+Architecture behavioral of Entity alucontrol is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ControlUnit.vhd" in Library work.
+Architecture behavioral of Entity controlunit is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/datamem(3).vhd" in Library work.
+Architecture behavioral of Entity datamem is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/FiveBitMux.vhd" in Library work.
+Architecture behavioral of Entity fivebitmux is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/instmem(4).vhd" in Library work.
+Entity <instmem> compiled.
+Entity <instmem> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/linkMux.vhd" in Library work.
+Architecture behavioral of Entity linkmux is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/MemoryMappedIO.vhd" in Library work.
+Architecture behavioral of Entity memorymappedio is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/PC.vhd" in Library work.
+Architecture structural of Entity pc is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/PCADD.vhd" in Library work.
+Architecture behavioral of Entity pcadd is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/regfile(1).vhd" in Library work.
+Architecture behavioral of Entity regfile is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/shiftTwo.vhd" in Library work.
+Architecture behavioral of Entity shifttwo is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/signExtend.vhd" in Library work.
+Architecture behavioral of Entity signextend is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/thirtyTwoMux.vhd" in Library work.
+Architecture behavioral of Entity thirtytwomux is up to date.
+Compiling verilog file "Data_Path.vf" in library work
+Module <Data_Path> compiled
+No errors in compilation
+Analysis of file <"toplevel.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <toplevel> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for module <Data_Path> in library <work>.
+
+Analyzing hierarchy for entity <alucontrol> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <add> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <fivebitmux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <pc> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <pcadd> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <instmem> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <regfile> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <signextend> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <shifttwo> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <thirtytwomux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <datamem> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <alu> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <controlunit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <linkmux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <memorymappedio> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <thirty_two_bit_register> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <REGEn> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Dflipflop> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <DflipflopEn> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <toplevel> in library <work> (Architecture <behavioral>).
+Entity <toplevel> analyzed. Unit <toplevel> generated.
+
+Analyzing module <Data_Path> in library <work>.
+WARNING:Xst:852 - "Data_Path.vf" line 136: Unconnected input port 'Carryin' of instance 'XLXI_17' is tied to GND.
+Module <Data_Path> is correct for synthesis.
+ 
+Analyzing Entity <alucontrol> in library <work> (Architecture <behavioral>).
+Entity <alucontrol> analyzed. Unit <alucontrol> generated.
+
+Analyzing Entity <add> in library <work> (Architecture <behavioral>).
+Entity <add> analyzed. Unit <add> generated.
+
+Analyzing Entity <fivebitmux> in library <work> (Architecture <behavioral>).
+Entity <fivebitmux> analyzed. Unit <fivebitmux> generated.
+
+Analyzing Entity <pc> in library <work> (Architecture <structural>).
+Entity <pc> analyzed. Unit <pc> generated.
+
+Analyzing Entity <thirty_two_bit_register> in library <work> (Architecture <structural>).
+Entity <thirty_two_bit_register> analyzed. Unit <thirty_two_bit_register> generated.
+
+Analyzing Entity <Dflipflop> in library <work> (Architecture <Behavioral>).
+Entity <Dflipflop> analyzed. Unit <Dflipflop> generated.
+
+Analyzing Entity <pcadd> in library <work> (Architecture <behavioral>).
+Entity <pcadd> analyzed. Unit <pcadd> generated.
+
+Analyzing Entity <instmem> in library <work> (Architecture <behavioral>).
+Entity <instmem> analyzed. Unit <instmem> generated.
+
+Analyzing Entity <regfile> in library <work> (Architecture <behavioral>).
+Entity <regfile> analyzed. Unit <regfile> generated.
+
+Analyzing Entity <signextend> in library <work> (Architecture <behavioral>).
+Entity <signextend> analyzed. Unit <signextend> generated.
+
+Analyzing Entity <shifttwo> in library <work> (Architecture <behavioral>).
+Entity <shifttwo> analyzed. Unit <shifttwo> generated.
+
+Analyzing Entity <thirtytwomux> in library <work> (Architecture <behavioral>).
+Entity <thirtytwomux> analyzed. Unit <thirtytwomux> generated.
+
+Analyzing Entity <datamem> in library <work> (Architecture <behavioral>).
+Entity <datamem> analyzed. Unit <datamem> generated.
+
+Analyzing Entity <alu> in library <work> (Architecture <behavioral>).
+Entity <alu> analyzed. Unit <alu> generated.
+
+Analyzing Entity <controlunit> in library <work> (Architecture <behavioral>).
+Entity <controlunit> analyzed. Unit <controlunit> generated.
+
+Analyzing Entity <linkmux> in library <work> (Architecture <behavioral>).
+Entity <linkmux> analyzed. Unit <linkmux> generated.
+
+Analyzing Entity <memorymappedio> in library <work> (Architecture <behavioral>).
+Entity <memorymappedio> analyzed. Unit <memorymappedio> generated.
+
+Analyzing Entity <REGEn> in library <work> (Architecture <behavioral>).
+Entity <REGEn> analyzed. Unit <REGEn> generated.
+
+Analyzing Entity <DflipflopEn> in library <work> (Architecture <Behavioral>).
+Entity <DflipflopEn> analyzed. Unit <DflipflopEn> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <alucontrol>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ALUControl.vhd".
+WARNING:Xst:1780 - Signal <ALUsig> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 32x4-bit ROM for signal <Dout$mux0000>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <alucontrol> synthesized.
+
+
+Synthesizing Unit <add>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ADD.vhd".
+    Found 32-bit adder for signal <Dout>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <add> synthesized.
+
+
+Synthesizing Unit <fivebitmux>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/FiveBitMux.vhd".
+Unit <fivebitmux> synthesized.
+
+
+Synthesizing Unit <pcadd>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/PCADD.vhd".
+    Found 32-bit adder for signal <Dout>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <pcadd> synthesized.
+
+
+Synthesizing Unit <instmem>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/instmem(4).vhd".
+WARNING:Xst:647 - Input <read_inst<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1781 - Signal <RAM> is used but never assigned. Tied to default value.
+    Found 256x8-bit ROM for signal <inst_out_23_16$varindex0000> created at line 112.
+    Found 256x8-bit ROM for signal <inst_out_31_24$varindex0000> created at line 113.
+    Found 256x8-bit ROM for signal <inst_out_7_0$varindex0000> created at line 110.
+    Found 256x8-bit ROM for signal <inst_out_15_8$varindex0000> created at line 111.
+    Found 8-bit adder for signal <a2>.
+    Found 8-bit adder for signal <a3>.
+    Found 8-bit adder for signal <a4>.
+    Summary:
+	inferred   4 ROM(s).
+	inferred   3 Adder/Subtractor(s).
+Unit <instmem> synthesized.
+
+
+Synthesizing Unit <regfile>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/regfile(1).vhd".
+    Found 32x32-bit dual-port RAM <Mram_RAM> for signal <RAM>.
+    Found 32x32-bit dual-port RAM <Mram_RAM_ren> for signal <RAM>.
+    Summary:
+	inferred   2 RAM(s).
+Unit <regfile> synthesized.
+
+
+Synthesizing Unit <signextend>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/signExtend.vhd".
+Unit <signextend> synthesized.
+
+
+Synthesizing Unit <shifttwo>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/shiftTwo.vhd".
+WARNING:Xst:647 - Input <sin<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <shifttwo> synthesized.
+
+
+Synthesizing Unit <thirtytwomux>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/thirtyTwoMux.vhd".
+Unit <thirtytwomux> synthesized.
+
+
+Synthesizing Unit <datamem>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/datamem(3).vhd".
+WARNING:Xst:647 - Input <address<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <address<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 64x32-bit single-port RAM <Mram_RAM> for signal <RAM>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <datamem> synthesized.
+
+
+Synthesizing Unit <alu>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/alu(1).vhd".
+WARNING:Xst:1780 - Signal <c32<32:1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <c32<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <B1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <A1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit tristate buffer for signal <Carryout>.
+    Found 1-bit tristate buffer for signal <Overflow>.
+    Found 33-bit adder for signal <add_result>.
+    Found 32-bit xor2 for signal <ALU_Result$xor0000> created at line 30.
+    Found 32-bit comparator less for signal <less_signal<0>>.
+    Found 33-bit subtractor for signal <sub_result>.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred   2 Tristate(s).
+Unit <alu> synthesized.
+
+
+Synthesizing Unit <controlunit>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ControlUnit.vhd".
+WARNING:Xst:647 - Input <Reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <controlunit> synthesized.
+
+
+Synthesizing Unit <linkmux>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/linkMux.vhd".
+Unit <linkmux> synthesized.
+
+
+Synthesizing Unit <Dflipflop>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/Dflipflop.vhd".
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Dflipflop> synthesized.
+
+
+Synthesizing Unit <DflipflopEn>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/DflipflopEn.vhd".
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <DflipflopEn> synthesized.
+
+
+Synthesizing Unit <thirty_two_bit_register>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/thirty_two_bit_register.vhd".
+Unit <thirty_two_bit_register> synthesized.
+
+
+Synthesizing Unit <REGEn>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/REGEn.vhd".
+Unit <REGEn> synthesized.
+
+
+Synthesizing Unit <pc>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/PC.vhd".
+Unit <pc> synthesized.
+
+
+Synthesizing Unit <memorymappedio>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/MemoryMappedIO.vhd".
+WARNING:Xst:647 - Input <ALUout<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ALUout<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit subtractor for signal <tagResult>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <memorymappedio> synthesized.
+
+
+Synthesizing Unit <Data_Path>.
+    Related source file is "Data_Path.vf".
+WARNING:Xst:646 - Signal <XLXN_232<31:28>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Data_Path> synthesized.
+
+
+Synthesizing Unit <toplevel>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/toplevel(3).vhd".
+WARNING:Xst:646 - Signal <temp<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 4x4-bit ROM for signal <enout>.
+    Found 16x8-bit ROM for signal <temp>.
+    Found 4-bit 4-to-1 multiplexer for signal <moutlsb>.
+    Found 4-bit 4-to-1 multiplexer for signal <moutmsb>.
+    Found 11-bit up counter for signal <qtemp>.
+    Summary:
+	inferred   2 ROM(s).
+	inferred   1 Counter(s).
+	inferred   8 Multiplexer(s).
+Unit <toplevel> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 32x32-bit dual-port RAM                               : 2
+ 64x32-bit single-port RAM                             : 1
+# ROMs                                                 : 7
+ 16x8-bit ROM                                          : 1
+ 256x8-bit ROM                                         : 4
+ 32x4-bit ROM                                          : 1
+ 4x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 8
+ 32-bit adder                                          : 2
+ 33-bit adder                                          : 1
+ 33-bit subtractor                                     : 1
+ 4-bit subtractor                                      : 1
+ 8-bit adder                                           : 3
+# Counters                                             : 1
+ 11-bit up counter                                     : 1
+# Registers                                            : 64
+ 1-bit register                                        : 64
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+# Multiplexers                                         : 2
+ 4-bit 4-to-1 multiplexer                              : 2
+# Tristates                                            : 2
+ 1-bit tristate buffer                                 : 2
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <datamem>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <MemWrite>      | high     |
+    |     addrA          | connected to signal <address>       |          |
+    |     diA            | connected to signal <write_data>    |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <datamem> synthesized (advanced).
+
+Synthesizing (advanced) Unit <regfile>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <RegWrite>      | high     |
+    |     addrA          | connected to signal <write_reg>     |          |
+    |     diA            | connected to signal <write_data>    |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <read_reg1>     |          |
+    |     doB            | connected to signal <read_data1>    |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM_ren> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <RegWrite>      | high     |
+    |     addrA          | connected to signal <write_reg>     |          |
+    |     diA            | connected to signal <write_data>    |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <read_reg2>     |          |
+    |     doB            | connected to signal <read_data2>    |          |
+    -----------------------------------------------------------------------
+Unit <regfile> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 32x32-bit dual-port distributed RAM                   : 2
+ 64x32-bit single-port distributed RAM                 : 1
+# ROMs                                                 : 7
+ 16x8-bit ROM                                          : 1
+ 256x8-bit ROM                                         : 4
+ 32x4-bit ROM                                          : 1
+ 4x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 8
+ 32-bit adder                                          : 2
+ 33-bit adder                                          : 1
+ 33-bit subtractor                                     : 1
+ 4-bit subtractor                                      : 1
+ 8-bit adder                                           : 3
+# Counters                                             : 1
+ 11-bit up counter                                     : 1
+# Registers                                            : 64
+ Flip-Flops                                            : 64
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+# Multiplexers                                         : 2
+ 4-bit 4-to-1 multiplexer                              : 2
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <toplevel> ...
+
+Optimizing unit <datamem> ...
+
+Optimizing unit <thirty_two_bit_register> ...
+
+Optimizing unit <REGEn> ...
+
+Optimizing unit <memorymappedio> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block toplevel, actual ratio is 73.
+FlipFlop MIPS/XLXI_6/REG/Gen_Thirty_Two[0].REGX/Q has been replicated 2 time(s)
+FlipFlop MIPS/XLXI_6/REG/Gen_Thirty_Two[1].REGX/Q has been replicated 2 time(s)
+FlipFlop MIPS/XLXI_6/REG/Gen_Thirty_Two[2].REGX/Q has been replicated 1 time(s)
+FlipFlop MIPS/XLXI_6/REG/Gen_Thirty_Two[3].REGX/Q has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 81
+ Flip-Flops                                            : 81
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : toplevel.ngr
+Top Level Output File Name         : toplevel
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 32
+
+Cell Usage :
+# BELS                             : 1472
+#      AND2                        : 2
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 38
+#      LUT2                        : 77
+#      LUT2_D                      : 5
+#      LUT2_L                      : 2
+#      LUT3                        : 194
+#      LUT3_D                      : 24
+#      LUT3_L                      : 40
+#      LUT4                        : 554
+#      LUT4_D                      : 47
+#      LUT4_L                      : 88
+#      MUXCY                       : 172
+#      MUXF5                       : 86
+#      OR2                         : 1
+#      VCC                         : 1
+#      XORCY                       : 136
+# FlipFlops/Latches                : 81
+#      FDC                         : 49
+#      FDE                         : 32
+# RAMS                             : 192
+#      RAM16X1D                    : 128
+#      RAM32X1S                    : 64
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 30
+#      IBUF                        : 10
+#      OBUF                        : 18
+#      OBUFT                       : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                      653  out of    960    68%  
+ Number of Slice Flip Flops:             81  out of   1920     4%  
+ Number of 4 input LUTs:               1457  out of   1920    75%  
+    Number used as logic:              1073
+    Number used as RAMs:                384
+ Number of IOs:                          32
+ Number of bonded IOBs:                  32  out of     83    38%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock1                             | BUFGP                  | 11    |
+clock                              | BUFGP                  | 262   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 49    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 21.326ns (Maximum Frequency: 46.892MHz)
+   Minimum input arrival time before clock: 3.809ns
+   Maximum output required time after clock: 19.963ns
+   Maximum combinational path delay: 7.300ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock1'
+  Clock period: 3.608ns (frequency: 277.177MHz)
+  Total number of paths / destination ports: 66 / 11
+-------------------------------------------------------------------------
+Delay:               3.608ns (Levels of Logic = 3)
+  Source:            qtemp_9 (FF)
+  Destination:       qtemp_10 (FF)
+  Source Clock:      clock1 rising
+  Destination Clock: clock1 rising
+
+  Data Path: qtemp_9 to qtemp_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             21   0.514   1.111  qtemp_9 (qtemp_9)
+     LUT1:I0->O            1   0.612   0.000  Mcount_qtemp_cy<9>_rt (Mcount_qtemp_cy<9>_rt)
+     MUXCY:S->O            0   0.404   0.000  Mcount_qtemp_cy<9> (Mcount_qtemp_cy<9>)
+     XORCY:CI->O           1   0.699   0.000  Mcount_qtemp_xor<10> (Result<10>)
+     FDC:D                     0.268          qtemp_10
+    ----------------------------------------
+    Total                      3.608ns (2.497ns logic, 1.111ns route)
+                                       (69.2% logic, 30.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 21.326ns (frequency: 46.892MHz)
+  Total number of paths / destination ports: 405345466 / 1830
+-------------------------------------------------------------------------
+Delay:               21.326ns (Levels of Logic = 23)
+  Source:            MIPS/XLXI_6/REG/Gen_Thirty_Two[1].REGX/Q_1 (FF)
+  Destination:       MIPS/XLXI_6/REG/Gen_Thirty_Two[28].REGX/Q (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: MIPS/XLXI_6/REG/Gen_Thirty_Two[1].REGX/Q_1 to MIPS/XLXI_6/REG/Gen_Thirty_Two[28].REGX/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             14   0.514   1.002  MIPS/XLXI_6/REG/Gen_Thirty_Two[1].REGX/Q_1 (MIPS/XLXI_6/REG/Gen_Thirty_Two[1].REGX/Q_1)
+     LUT4:I0->O            2   0.612   0.383  MIPS/XLXI_8/Mrom_inst_out_31_24_varindex0000151 (MIPS/XLXI_8/Mrom_inst_out_31_24_varindex000015)
+     LUT4:I3->O            1   0.612   0.360  MIPS/XLXI_8/Mrom_inst_out_31_24_varindex0000381_9 (MIPS/XLXI_8/Mrom_inst_out_31_24_varindex0000381_9)
+     LUT4:I3->O           15   0.612   0.894  MIPS/XLXN_136<7>7 (MIPS/XLXN_103<31>)
+     LUT3:I2->O            1   0.612   0.000  MIPS/XLXI_1/sel<1>40_SW0_SW1_G (N975)
+     MUXF5:I1->O           1   0.278   0.387  MIPS/XLXI_1/sel<1>40_SW0_SW1 (N535)
+     LUT4_D:I2->O          9   0.612   0.727  MIPS/XLXI_1/sel<1>40 (MIPS/XLXI_1/sel<1>)
+     LUT4_D:I2->O          1   0.612   0.360  MIPS/XLXI_1/Dout<0>60_SW0 (N559)
+     LUT4:I3->O           15   0.612   1.016  MIPS/XLXI_1/Dout<0>60_1 (MIPS/XLXI_1/Dout<0>60)
+     LUT4:I0->O           31   0.612   1.103  MIPS/XLXI_17/ALU_Result<10>112 (N107)
+     LUT3_L:I2->LO         1   0.612   0.103  MIPS/XLXI_17/ALU_Result<25>38_SW1 (N413)
+     LUT4:I3->O            1   0.612   0.360  MIPS/XLXI_17/ALU_Result<25>60_SW0 (N870)
+     LUT4:I3->O            4   0.612   0.502  MIPS/XLXI_17/ALU_Result<25>62 (MIPS/XLXN_461<25>)
+     LUT4:I3->O            1   0.612   0.000  MIPS/XLXI_17/Zero_cmp_eq0000_wg_lut<2> (MIPS/XLXI_17/Zero_cmp_eq0000_wg_lut<2>)
+     MUXCY:S->O            1   0.404   0.000  MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<2> (MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<3> (MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<4> (MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<5> (MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<6> (MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O           3   0.399   0.451  MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<7> (MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<7>)
+     INV:I->O              1   0.612   0.357  MIPS/XLXI_19 (MIPS/XLXN_434)
+     AND2:I0->O            1   0.612   0.357  MIPS/XLXI_18 (MIPS/XLXN_145)
+     OR2:I0->O            30   0.612   1.072  MIPS/XLXI_20 (MIPS/XLXN_459)
+     MUXF5:S->O            1   0.641   0.000  MIPS/XLXI_23/MOut<31> (MIPS/XLXN_263<31>)
+     FDC:D                     0.268          MIPS/XLXI_6/REG/Gen_Thirty_Two[31].REGX/Q
+    ----------------------------------------
+    Total                     21.326ns (11.891ns logic, 9.435ns route)
+                                       (55.8% logic, 44.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              3.809ns (Levels of Logic = 4)
+  Source:            Din<7> (PAD)
+  Destination:       MIPS/XLXI_9/Mram_RAM16 (RAM)
+  Destination Clock: clock rising
+
+  Data Path: Din<7> to MIPS/XLXI_9/Mram_RAM16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.106   0.509  Din_7_IBUF (Din_7_IBUF)
+     LUT3:I0->O            1   0.612   0.000  MIPS/XLXI_24/MOut<7>39_F (N1084)
+     MUXF5:I0->O           1   0.278   0.360  MIPS/XLXI_24/MOut<7>39 (MIPS/XLXI_24/MOut<7>39)
+     LUT4:I3->O            4   0.612   0.000  MIPS/XLXI_24/MOut<7>81 (MIPS/XLXN_262<7>)
+     RAM16X1D:D                0.332          MIPS/XLXI_9/Mram_RAM_ren15
+    ----------------------------------------
+    Total                      3.809ns (2.940ns logic, 0.869ns route)
+                                       (77.2% logic, 22.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 3271352 / 15
+-------------------------------------------------------------------------
+Offset:              19.963ns (Levels of Logic = 20)
+  Source:            MIPS/XLXI_6/REG/Gen_Thirty_Two[1].REGX/Q_1 (FF)
+  Destination:       zero (PAD)
+  Source Clock:      clock rising
+
+  Data Path: MIPS/XLXI_6/REG/Gen_Thirty_Two[1].REGX/Q_1 to zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             14   0.514   1.002  MIPS/XLXI_6/REG/Gen_Thirty_Two[1].REGX/Q_1 (MIPS/XLXI_6/REG/Gen_Thirty_Two[1].REGX/Q_1)
+     LUT4:I0->O            2   0.612   0.383  MIPS/XLXI_8/Mrom_inst_out_31_24_varindex0000151 (MIPS/XLXI_8/Mrom_inst_out_31_24_varindex000015)
+     LUT4:I3->O            1   0.612   0.360  MIPS/XLXI_8/Mrom_inst_out_31_24_varindex0000381_9 (MIPS/XLXI_8/Mrom_inst_out_31_24_varindex0000381_9)
+     LUT4:I3->O           15   0.612   0.894  MIPS/XLXN_136<7>7 (MIPS/XLXN_103<31>)
+     LUT3:I2->O            1   0.612   0.000  MIPS/XLXI_1/sel<1>40_SW0_SW1_G (N975)
+     MUXF5:I1->O           1   0.278   0.387  MIPS/XLXI_1/sel<1>40_SW0_SW1 (N535)
+     LUT4_D:I2->O          9   0.612   0.727  MIPS/XLXI_1/sel<1>40 (MIPS/XLXI_1/sel<1>)
+     LUT4_D:I2->O          1   0.612   0.360  MIPS/XLXI_1/Dout<0>60_SW0 (N559)
+     LUT4:I3->O           15   0.612   1.016  MIPS/XLXI_1/Dout<0>60_1 (MIPS/XLXI_1/Dout<0>60)
+     LUT4:I0->O           31   0.612   1.103  MIPS/XLXI_17/ALU_Result<10>112 (N107)
+     LUT3_L:I2->LO         1   0.612   0.103  MIPS/XLXI_17/ALU_Result<25>38_SW1 (N413)
+     LUT4:I3->O            1   0.612   0.360  MIPS/XLXI_17/ALU_Result<25>60_SW0 (N870)
+     LUT4:I3->O            4   0.612   0.502  MIPS/XLXI_17/ALU_Result<25>62 (MIPS/XLXN_461<25>)
+     LUT4:I3->O            1   0.612   0.000  MIPS/XLXI_17/Zero_cmp_eq0000_wg_lut<2> (MIPS/XLXI_17/Zero_cmp_eq0000_wg_lut<2>)
+     MUXCY:S->O            1   0.404   0.000  MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<2> (MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<3> (MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<4> (MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<5> (MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<6> (MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O           3   0.399   0.451  MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<7> (MIPS/XLXI_17/Zero_cmp_eq0000_wg_cy<7>)
+     OBUF:I->O                 3.169          zero_OBUF (zero)
+    ----------------------------------------
+    Total                     19.963ns (12.315ns logic, 7.649ns route)
+                                       (61.7% logic, 38.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock1'
+  Total number of paths / destination ports: 176 / 11
+-------------------------------------------------------------------------
+Offset:              8.445ns (Levels of Logic = 5)
+  Source:            qtemp_9 (FF)
+  Destination:       dout<6> (PAD)
+  Source Clock:      clock1 rising
+
+  Data Path: qtemp_9 to dout<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             21   0.514   1.111  qtemp_9 (qtemp_9)
+     LUT3:I0->O            1   0.612   0.000  Mmux_moutlsb_3 (Mmux_moutlsb_3)
+     MUXF5:I1->O           1   0.278   0.426  Mmux_moutlsb_2_f5 (moutlsb<0>)
+     LUT3:I1->O            7   0.612   0.754  mout<0>1 (mout<0>)
+     LUT4:I0->O            1   0.612   0.357  Mrom_temp31 (dout_3_OBUF)
+     OBUF:I->O                 3.169          dout_3_OBUF (dout<3>)
+    ----------------------------------------
+    Total                      8.445ns (5.797ns logic, 2.648ns route)
+                                       (68.6% logic, 31.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 29 / 8
+-------------------------------------------------------------------------
+Delay:               7.300ns (Levels of Logic = 4)
+  Source:            MSB (PAD)
+  Destination:       dout<6> (PAD)
+
+  Data Path: MSB to dout<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.106   0.690  MSB_IBUF (MSB_IBUF)
+     LUT3:I0->O            7   0.612   0.754  mout<3>1 (mout<3>)
+     LUT4:I0->O            1   0.612   0.357  Mrom_temp21 (dout_2_OBUF)
+     OBUF:I->O                 3.169          dout_2_OBUF (dout<2>)
+    ----------------------------------------
+    Total                      7.300ns (5.499ns logic, 1.801ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 19.58 secs
+ 
+--> 
+
+Total memory usage is 304292 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   56 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

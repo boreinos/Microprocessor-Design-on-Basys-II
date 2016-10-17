@@ -1,0 +1,5 @@
+[Inputs]
+=sigExin[15:0]=
+[Outputs]
+=sigExout[31:0]=
+[BiDir]

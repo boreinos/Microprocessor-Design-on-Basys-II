@@ -1,0 +1,6 @@
+vhdtdtfi -lib work PCADD.vhd -prj project2 -o PCADD.spl -module PCADD -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PCADD.spl C:/Users/vslabsal/Desktop/lab2/project2/PCADD.sym 
+vhdtdtfi -lib work PCADD.vhd -prj project2 -o PCADD.spl -module PCADD -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PCADD.spl C:/Users/breinosa/Desktop/Project3_Boris_Reinosa/project3/PCADD.sym 
+vhdtdtfi -lib work PCADD.vhd -prj project2 -o PCADD.spl -module PCADD -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PCADD.spl C:/Users/breinosa/Desktop/Project3_Boris_Reinosa/project3/PCADD.sym 

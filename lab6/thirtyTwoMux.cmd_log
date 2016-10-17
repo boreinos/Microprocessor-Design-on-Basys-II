@@ -1,0 +1,4 @@
+vhdtdtfi -lib work thirtyTwoMux.vhd -prj project2 -o thirtyTwoMux.spl -module thirtyTwoMux -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e thirtyTwoMux.spl C:/Users/breinosa/Desktop/Project3_Boris_Reinosa/project3/thirtyTwoMux.sym 
+vhdtdtfi -lib work thirtyTwoMux.vhd -prj project2 -o thirtyTwoMux.spl -module thirtyTwoMux -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e thirtyTwoMux.spl C:/Users/breinosa/Desktop/Project3_Boris_Reinosa/project3/thirtyTwoMux.sym 

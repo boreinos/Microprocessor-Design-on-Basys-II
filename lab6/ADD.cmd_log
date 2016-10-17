@@ -1,0 +1,4 @@
+vhdtdtfi -lib work ADD.vhd -prj project2 -o ADD.spl -module ADD -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ADD.spl C:/Users/breinosa/Desktop/Project3_Boris_Reinosa/project3/ADD.sym 
+vhdtdtfi -lib work ADD.vhd -prj project2 -o ADD.spl -module ADD -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ADD.spl C:/Users/breinosa/Desktop/Project3_Boris_Reinosa/project3/ADD.sym 

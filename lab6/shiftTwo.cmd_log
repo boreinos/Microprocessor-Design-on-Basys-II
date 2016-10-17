@@ -1,0 +1,4 @@
+vhdtdtfi -lib work shiftTwo.vhd -prj project2 -o shiftTwo.spl -module shiftTwo -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e shiftTwo.spl C:/Users/breinosa/Desktop/Project3_Boris_Reinosa/project3/shiftTwo.sym 
+vhdtdtfi -lib work shiftTwo.vhd -prj project2 -o shiftTwo.spl -module shiftTwo -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e shiftTwo.spl C:/Users/breinosa/Desktop/Project3_Boris_Reinosa/project3/shiftTwo.sym 

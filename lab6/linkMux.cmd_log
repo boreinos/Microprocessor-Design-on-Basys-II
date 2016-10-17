@@ -1,0 +1,2 @@
+vhdtdtfi -lib work linkMux.vhd -prj Lab4 -o linkMux.spl -module linkMux -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e linkMux.spl {C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/linkMux.sym} 

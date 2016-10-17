@@ -1,0 +1,69 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/Data_Path_Data_Path_sch_tb_isim_beh.exe -prj C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/Data_Path_Data_Path_sch_tb_beh.prj work.Data_Path_Data_Path_sch_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/Data_Path.vf" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Parsing VHDL file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/DflipflopEn.vhd" into library work
+Parsing VHDL file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/Dflipflop.vhd" into library work
+Parsing VHDL file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/thirty_two_bit_register.vhd" into library work
+Parsing VHDL file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/REGEn.vhd" into library work
+Parsing VHDL file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/thirtyTwoMux.vhd" into library work
+Parsing VHDL file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/signExtend.vhd" into library work
+Parsing VHDL file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/shiftTwo.vhd" into library work
+Parsing VHDL file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/regfile(1).vhd" into library work
+Parsing VHDL file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/PCADD.vhd" into library work
+Parsing VHDL file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/PC.vhd" into library work
+Parsing VHDL file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/MemoryMappedIO.vhd" into library work
+Parsing VHDL file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/linkMux.vhd" into library work
+Parsing VHDL file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/instmem(4).vhd" into library work
+Parsing VHDL file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/FiveBitMux.vhd" into library work
+Parsing VHDL file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/datamem(3).vhd" into library work
+Parsing VHDL file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ControlUnit.vhd" into library work
+Parsing VHDL file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ALUControl.vhd" into library work
+Parsing VHDL file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/alu(1).vhd" into library work
+Parsing VHDL file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ADD.vhd" into library work
+Parsing VHDL file "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/datapath_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module glbl
+Compiling module AND2
+Compiling module INV
+Compiling module OR2
+Compiling module Data_Path
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package vl_types
+Compiling architecture behavioral of entity ALUControl [alucontrol_default]
+Compiling package std_logic_arith
+Compiling package std_logic_signed
+Compiling architecture behavioral of entity ADD [add_default]
+Compiling architecture behavioral of entity FiveBitMux [fivebitmux_default]
+Compiling architecture behavioral of entity Dflipflop [dflipflop_default]
+Compiling architecture structural of entity thirty_two_bit_register [thirty_two_bit_register_default]
+Compiling architecture structural of entity PC [pc_default]
+Compiling architecture behavioral of entity PCADD [pcadd_default]
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity instmem [instmem_default]
+Compiling architecture behavioral of entity regfile [regfile_default]
+Compiling architecture behavioral of entity signExtend [signextend_default]
+Compiling architecture behavioral of entity shiftTwo [shifttwo_default]
+Compiling architecture behavioral of entity thirtyTwoMux [thirtytwomux_default]
+Compiling architecture behavioral of entity datamem [datamem_default]
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture behavioral of entity ControlUnit [controlunit_default]
+Compiling architecture behavioral of entity linkMux [linkmux_default]
+Compiling architecture behavioral of entity DflipflopEn [dflipflopen_default]
+Compiling architecture behavioral of entity REGEn [regen_default]
+Compiling architecture behavioral of entity MemoryMappedIO [memorymappedio_default]
+Compiling architecture behavioral of entity data_path_data_path_sch_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 47 VHDL Units
+Compiled 5 Verilog Units
+Built simulation executable C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/Data_Path_Data_Path_sch_tb_isim_beh.exe
+Fuse Memory Usage: 52544 KB
+Fuse CPU Usage: 795 ms

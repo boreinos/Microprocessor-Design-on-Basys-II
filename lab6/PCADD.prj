@@ -1,0 +1,3 @@
+vhdl work "PCADD.vhd"
+verilog work "DataPath.vf"
+verilog work "NewDataPath.vf"

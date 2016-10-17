@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/breinosa/Desktop/Project3_Boris_Reinosa/project3/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/breinosa/Desktop/Project3_Boris_Reinosa/project3/xst"
+elaborate
+-ifn ADD.prj
+-ifmt mixed

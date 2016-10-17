@@ -1,0 +1,2 @@
+vhdtdtfi -lib work Dflipflop.vhd -lib work thirty_two_bit_register.vhd -lib work MemoryMappedIO.vhd -prj Lab5 -o MemoryMappedIO.spl -module MemoryMappedIO -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MemoryMappedIO.spl {C:/Users/Boris_2/Documents/MIPS 445/Project5_Boris_Reinosa/lab5/MemoryMappedIO.sym} 

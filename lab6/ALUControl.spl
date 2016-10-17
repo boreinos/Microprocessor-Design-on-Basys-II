@@ -1,0 +1,8 @@
+[Inputs]
+ALUop1
+=Din[5:0]=
+=ALuop2[2:0]=
+[Outputs]
+jr
+=Dout[3:0]=
+[BiDir]

@@ -1,0 +1,6 @@
+[Inputs]
+link
+=reg1[4:0]=
+[Outputs]
+=regout[4:0]=
+[BiDir]

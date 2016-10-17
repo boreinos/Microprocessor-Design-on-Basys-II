@@ -1,0 +1,6 @@
+[Inputs]
+=DinA[31:0]=
+=DinB[31:0]=
+[Outputs]
+=Dout[31:0]=
+[BiDir]

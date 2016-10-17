@@ -1,0 +1,43 @@
+EN dflipflop NULL "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/Dflipflop.vhd" sub00/vhpl02 1449456265
+EN shifttwo NULL "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/shiftTwo.vhd" sub00/vhpl22 1449456299
+EN regen NULL "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/REGEn.vhd" sub00/vhpl38 1449456271
+MO DataPath NULL DataPath.vf vlg67/_data_path.bin 1446160152
+EN regfile NULL "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/regfile(1).vhd" sub00/vhpl06 1449456297
+AR add behavioral "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ADD.vhd" sub00/vhpl25 1449456276
+AR pc structural "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/PC.vhd" sub00/vhpl15 1449456294
+EN datamem NULL "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/datamem(3).vhd" sub00/vhpl30 1449456283
+AR signextend behavioral "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/signExtend.vhd" sub00/vhpl21 1449456302
+AR instmem behavioral "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/instmem(4).vhd" sub00/vhpl13 1449456288
+AR shifttwo behavioral "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/shiftTwo.vhd" sub00/vhpl23 1449456300
+EN dflipflopen NULL "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/DflipflopEn.vhd" sub00/vhpl36 1449456267
+AR pcadd behavioral "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/PCADD.vhd" sub00/vhpl17 1449456296
+EN pc NULL "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/PC.vhd" sub00/vhpl14 1449456293
+EN toplevel NULL "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/toplevel(3).vhd" sub00/vhpl18 1449456273
+AR linkmux behavioral "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/linkMux.vhd" sub00/vhpl33 1449456290
+AR memorymappedio behavioral "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/MemoryMappedIO.vhd" sub00/vhpl35 1449456292
+EN pcadd NULL "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/PCADD.vhd" sub00/vhpl16 1449456295
+AR dflipflop behavioral "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/Dflipflop.vhd" sub00/vhpl03 1449456266
+EN thirty_two_bit_register NULL "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/thirty_two_bit_register.vhd" sub00/vhpl04 1449456269
+AR dflipflopen behavioral "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/DflipflopEn.vhd" sub00/vhpl37 1449456268
+EN memorymappedio NULL "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/MemoryMappedIO.vhd" sub00/vhpl34 1449456291
+EN instmem NULL "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/instmem(4).vhd" sub00/vhpl12 1449456287
+AR fivebitmux behavioral "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/FiveBitMux.vhd" sub00/vhpl29 1449456286
+AR datamem behavioral "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/datamem(3).vhd" sub00/vhpl31 1449456284
+EN add NULL "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ADD.vhd" sub00/vhpl24 1449456275
+AR toplevel behavioral "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/toplevel(3).vhd" sub00/vhpl19 1449456274
+EN controlunit NULL "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ControlUnit.vhd" sub00/vhpl10 1449456281
+AR thirtytwomux behavioral "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/thirtyTwoMux.vhd" sub00/vhpl27 1449456304
+EN fivebitmux NULL "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/FiveBitMux.vhd" sub00/vhpl28 1449456285
+AR alu behavioral "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/alu(1).vhd" sub00/vhpl01 1449456278
+AR alucontrol behavioral "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ALUControl.vhd" sub00/vhpl09 1449456280
+MO Data_Path NULL Data_Path.vf vlg1E/_data___path.bin 1449456265
+MO NewDataPath NULL NewDataPath.vf vlg35/_new_data_path.bin 1446160152
+EN thirtytwomux NULL "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/thirtyTwoMux.vhd" sub00/vhpl26 1449456303
+AR regen behavioral "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/REGEn.vhd" sub00/vhpl39 1449456272
+AR controlunit behavioral "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ControlUnit.vhd" sub00/vhpl11 1449456282
+EN linkmux NULL "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/linkMux.vhd" sub00/vhpl32 1449456289
+AR thirty_two_bit_register structural "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/thirty_two_bit_register.vhd" sub00/vhpl05 1449456270
+AR regfile behavioral "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/regfile(1).vhd" sub00/vhpl07 1449456298
+EN alu NULL "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/alu(1).vhd" sub00/vhpl00 1449456277
+EN alucontrol NULL "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/ALUControl.vhd" sub00/vhpl08 1449456279
+EN signextend NULL "C:/Users/Boris_2/Documents/MIPS 445/Project6_Boris_Reinosa/lab6/signExtend.vhd" sub00/vhpl20 1449456301

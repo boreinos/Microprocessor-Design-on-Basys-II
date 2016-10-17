@@ -1,0 +1,5 @@
+[Inputs]
+=sin[31:0]=
+[Outputs]
+=sout[31:0]=
+[BiDir]

@@ -1,0 +1,819 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: Data_Path.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Data_Path.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Data_Path"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : Data_Path
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/Dflipflop.vhd" in Library work.
+Architecture behavioral of Entity dflipflop is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/thirty_two_bit_register.vhd" in Library work.
+Architecture structural of Entity thirty_two_bit_register is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/ADD.vhd" in Library work.
+Architecture behavioral of Entity add is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/alu(1).vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/ALUControl.vhd" in Library work.
+Architecture behavioral of Entity alucontrol is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/ControlUnit.vhd" in Library work.
+Architecture behavioral of Entity controlunit is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/datamem(1).vhd" in Library work.
+Architecture behavioral of Entity datamem is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/FiveBitMux.vhd" in Library work.
+Architecture behavioral of Entity fivebitmux is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/instmem(2).vhd" in Library work.
+Architecture behavioral of Entity instmem is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/PC.vhd" in Library work.
+Architecture structural of Entity pc is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/PCADD.vhd" in Library work.
+Architecture behavioral of Entity pcadd is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/regfile(1).vhd" in Library work.
+Architecture behavioral of Entity regfile is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/shiftTwo.vhd" in Library work.
+Architecture behavioral of Entity shifttwo is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/signExtend.vhd" in Library work.
+Architecture behavioral of Entity signextend is up to date.
+Compiling vhdl file "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/thirtyTwoMux.vhd" in Library work.
+Architecture behavioral of Entity thirtytwomux is up to date.
+Compiling verilog file "Data_Path.vf" in library work
+Module <Data_Path> compiled
+No errors in compilation
+Analysis of file <"Data_Path.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Data_Path> in library <work>.
+
+Analyzing hierarchy for entity <alucontrol> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <alu> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <add> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <controlunit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <fivebitmux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <pc> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <pcadd> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <instmem> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <regfile> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <signextend> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <shifttwo> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <thirtytwomux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <datamem> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <thirty_two_bit_register> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <Dflipflop> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Data_Path>.
+WARNING:Xst:852 - "Data_Path.vf" line 74: Unconnected input port 'Carryin' of instance 'XLXI_2' is tied to GND.
+Module <Data_Path> is correct for synthesis.
+ 
+Analyzing Entity <alucontrol> in library <work> (Architecture <behavioral>).
+Entity <alucontrol> analyzed. Unit <alucontrol> generated.
+
+Analyzing Entity <alu> in library <work> (Architecture <behavioral>).
+Entity <alu> analyzed. Unit <alu> generated.
+
+Analyzing Entity <add> in library <work> (Architecture <behavioral>).
+Entity <add> analyzed. Unit <add> generated.
+
+Analyzing Entity <controlunit> in library <work> (Architecture <behavioral>).
+Entity <controlunit> analyzed. Unit <controlunit> generated.
+
+Analyzing Entity <fivebitmux> in library <work> (Architecture <behavioral>).
+Entity <fivebitmux> analyzed. Unit <fivebitmux> generated.
+
+Analyzing Entity <pc> in library <work> (Architecture <structural>).
+Entity <pc> analyzed. Unit <pc> generated.
+
+Analyzing Entity <thirty_two_bit_register> in library <work> (Architecture <structural>).
+Entity <thirty_two_bit_register> analyzed. Unit <thirty_two_bit_register> generated.
+
+Analyzing Entity <Dflipflop> in library <work> (Architecture <Behavioral>).
+Entity <Dflipflop> analyzed. Unit <Dflipflop> generated.
+
+Analyzing Entity <pcadd> in library <work> (Architecture <behavioral>).
+Entity <pcadd> analyzed. Unit <pcadd> generated.
+
+Analyzing Entity <instmem> in library <work> (Architecture <behavioral>).
+Entity <instmem> analyzed. Unit <instmem> generated.
+
+Analyzing Entity <regfile> in library <work> (Architecture <behavioral>).
+Entity <regfile> analyzed. Unit <regfile> generated.
+
+Analyzing Entity <signextend> in library <work> (Architecture <behavioral>).
+Entity <signextend> analyzed. Unit <signextend> generated.
+
+Analyzing Entity <shifttwo> in library <work> (Architecture <behavioral>).
+Entity <shifttwo> analyzed. Unit <shifttwo> generated.
+
+Analyzing Entity <thirtytwomux> in library <work> (Architecture <behavioral>).
+Entity <thirtytwomux> analyzed. Unit <thirtytwomux> generated.
+
+Analyzing Entity <datamem> in library <work> (Architecture <behavioral>).
+Entity <datamem> analyzed. Unit <datamem> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <alucontrol>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/ALUControl.vhd".
+WARNING:Xst:1780 - Signal <ALUsig> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 32x4-bit ROM for signal <Dout$mux0000>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <alucontrol> synthesized.
+
+
+Synthesizing Unit <alu>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/alu(1).vhd".
+WARNING:Xst:1780 - Signal <c32<32:1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <c32<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <B1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <A1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit tristate buffer for signal <Carryout>.
+    Found 1-bit tristate buffer for signal <Overflow>.
+    Found 33-bit adder for signal <add_result>.
+    Found 32-bit xor2 for signal <ALU_Result$xor0000> created at line 30.
+    Found 32-bit comparator less for signal <less_signal<0>>.
+    Found 33-bit subtractor for signal <sub_result>.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred   2 Tristate(s).
+Unit <alu> synthesized.
+
+
+Synthesizing Unit <add>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/ADD.vhd".
+    Found 32-bit adder for signal <Dout>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <add> synthesized.
+
+
+Synthesizing Unit <controlunit>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/ControlUnit.vhd".
+WARNING:Xst:647 - Input <Reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <controlunit> synthesized.
+
+
+Synthesizing Unit <fivebitmux>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/FiveBitMux.vhd".
+Unit <fivebitmux> synthesized.
+
+
+Synthesizing Unit <pcadd>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/PCADD.vhd".
+    Found 32-bit adder for signal <Dout>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <pcadd> synthesized.
+
+
+Synthesizing Unit <instmem>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/instmem(2).vhd".
+WARNING:Xst:647 - Input <read_inst<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1781 - Signal <RAM> is used but never assigned. Tied to default value.
+    Found 256x8-bit ROM for signal <inst_out_23_16$varindex0000> created at line 92.
+    Found 256x8-bit ROM for signal <inst_out_31_24$varindex0000> created at line 93.
+    Found 256x8-bit ROM for signal <inst_out_7_0$varindex0000> created at line 90.
+    Found 256x8-bit ROM for signal <inst_out_15_8$varindex0000> created at line 91.
+    Found 8-bit adder for signal <a2>.
+    Found 8-bit adder for signal <a3>.
+    Found 8-bit adder for signal <a4>.
+    Summary:
+	inferred   4 ROM(s).
+	inferred   3 Adder/Subtractor(s).
+Unit <instmem> synthesized.
+
+
+Synthesizing Unit <regfile>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/regfile(1).vhd".
+    Found 32x32-bit dual-port RAM <Mram_RAM> for signal <RAM>.
+    Found 32x32-bit dual-port RAM <Mram_RAM_ren> for signal <RAM>.
+    Summary:
+	inferred   2 RAM(s).
+Unit <regfile> synthesized.
+
+
+Synthesizing Unit <signextend>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/signExtend.vhd".
+Unit <signextend> synthesized.
+
+
+Synthesizing Unit <shifttwo>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/shiftTwo.vhd".
+WARNING:Xst:647 - Input <sin<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <shifttwo> synthesized.
+
+
+Synthesizing Unit <thirtytwomux>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/thirtyTwoMux.vhd".
+Unit <thirtytwomux> synthesized.
+
+
+Synthesizing Unit <datamem>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/datamem(1).vhd".
+WARNING:Xst:647 - Input <address<31:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <address<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <data_out> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 32x32-bit single-port RAM <Mram_RAM> for signal <RAM>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <datamem> synthesized.
+
+
+Synthesizing Unit <Dflipflop>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/Dflipflop.vhd".
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Dflipflop> synthesized.
+
+
+Synthesizing Unit <thirty_two_bit_register>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/thirty_two_bit_register.vhd".
+Unit <thirty_two_bit_register> synthesized.
+
+
+Synthesizing Unit <pc>.
+    Related source file is "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/PC.vhd".
+Unit <pc> synthesized.
+
+
+Synthesizing Unit <Data_Path>.
+    Related source file is "Data_Path.vf".
+WARNING:Xst:653 - Signal <read_data2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:653 - Signal <read_data1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:653 - Signal <inst_out> is used but never assigned. This sourceless signal will be automatically connected to value 000000.
+WARNING:Xst:646 - Signal <XLXN_103<31:26>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <Q> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+Unit <Data_Path> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 32x32-bit dual-port RAM                               : 2
+ 32x32-bit single-port RAM                             : 1
+# ROMs                                                 : 5
+ 256x8-bit ROM                                         : 4
+ 32x4-bit ROM                                          : 1
+# Adders/Subtractors                                   : 7
+ 32-bit adder                                          : 2
+ 33-bit adder                                          : 1
+ 33-bit subtractor                                     : 1
+ 8-bit adder                                           : 3
+# Registers                                            : 32
+ 1-bit register                                        : 32
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+# Tristates                                            : 2
+ 1-bit tristate buffer                                 : 2
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <XLXI_5> is unconnected in block <Data_Path>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[0].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[1].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[7].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[8].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[9].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[10].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[11].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[12].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[13].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[14].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[15].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[16].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[17].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[18].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[19].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[20].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[21].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[22].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[23].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[24].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[25].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[26].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[27].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[28].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[29].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[30].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Gen_Thirty_Two[31].REGX> is unconnected in block <REG>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <XLXI_9> is unconnected in block <Data_Path>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <XLXI_13> is unconnected in block <Data_Path>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <XLXI_14> is unconnected in block <Data_Path>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <datamem>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <MemWrite>      | high     |
+    |     addrA          | connected to signal <address>       |          |
+    |     diA            | connected to signal <write_data>    |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <datamem> synthesized (advanced).
+
+Synthesizing (advanced) Unit <regfile>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <RegWrite>      | high     |
+    |     addrA          | connected to signal <write_reg>     |          |
+    |     diA            | connected to signal <write_data>    |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <read_reg1>     |          |
+    |     doB            | connected to signal <read_data1>    |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM_ren> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <RegWrite>      | high     |
+    |     addrA          | connected to signal <write_reg>     |          |
+    |     diA            | connected to signal <write_data>    |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <read_reg2>     |          |
+    |     doB            | connected to signal <read_data2>    |          |
+    -----------------------------------------------------------------------
+Unit <regfile> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 32x32-bit dual-port distributed RAM                   : 2
+ 32x32-bit single-port distributed RAM                 : 1
+# ROMs                                                 : 5
+ 256x8-bit ROM                                         : 4
+ 32x4-bit ROM                                          : 1
+# Adders/Subtractors                                   : 7
+ 32-bit adder                                          : 2
+ 33-bit adder                                          : 1
+ 33-bit subtractor                                     : 1
+ 8-bit adder                                           : 3
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren2> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren4> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren6> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren8> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren10> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren12> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren14> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren16> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren18> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren20> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren22> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren24> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren26> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren28> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren30> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren32> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren34> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren36> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren38> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren40> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren42> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren44> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren46> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren48> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren50> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren52> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren54> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren56> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren58> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren60> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren62> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren64> of sequential type is unconnected in block <Data_Path>.
+
+Optimizing unit <Data_Path> ...
+
+Optimizing unit <datamem> ...
+
+Optimizing unit <thirty_two_bit_register> ...
+WARNING:Xst:1710 - FF/Latch <XLXI_6/REG/Gen_Thirty_Two[3].REGX/Q> (without init value) has a constant value of 0 in block <Data_Path>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_6/REG/Gen_Thirty_Two[4].REGX/Q> (without init value) has a constant value of 0 in block <Data_Path>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_6/REG/Gen_Thirty_Two[5].REGX/Q> (without init value) has a constant value of 0 in block <Data_Path>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_6/REG/Gen_Thirty_Two[6].REGX/Q> (without init value) has a constant value of 0 in block <Data_Path>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren1> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren3> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren5> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren7> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren9> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren11> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren13> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren15> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren17> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren19> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren21> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren23> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren25> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren27> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren29> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren31> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren33> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren35> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren37> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren39> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren41> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren43> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren45> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren47> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren49> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren51> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren53> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren55> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren57> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren59> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren61> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_9/Mram_RAM_ren63> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM32> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM31> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM30> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM29> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM28> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM27> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM26> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM25> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM24> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM23> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM22> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM21> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM20> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM19> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM18> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM17> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM16> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM15> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM14> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM13> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM12> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM11> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM10> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM9> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM8> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM7> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM6> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM5> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM4> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM3> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM2> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_14/Mram_RAM1> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[0].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[1].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[7].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[8].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[9].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[10].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[11].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[12].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[13].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[14].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[15].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[16].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[17].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[18].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[19].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[20].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[21].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[22].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[23].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[24].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[25].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[26].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[27].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[28].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[29].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[30].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+WARNING:Xst:2677 - Node <XLXI_6/REG/Gen_Thirty_Two[31].REGX/Q> of sequential type is unconnected in block <Data_Path>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Data_Path, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Data_Path.ngr
+Top Level Output File Name         : Data_Path
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 42
+
+Cell Usage :
+# BELS                             : 3
+#      AND2                        : 1
+#      GND                         : 1
+#      VCC                         : 1
+# FlipFlops/Latches                : 1
+#      FDC                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 41
+#      IBUF                        : 1
+#      OBUF                        : 40
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                        0  out of    960     0%  
+ Number of IOs:                          42
+ Number of bonded IOBs:                  42  out of     83    50%  
+    IOB Flip Flops:                       1
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 1     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 1     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.040ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            XLXI_6/REG/Gen_Thirty_Two[2].REGX/Q (FF)
+  Destination:       XLXN_109<0> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: XLXI_6/REG/Gen_Thirty_Two[2].REGX/Q to XLXN_109<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.514   0.357  XLXI_6/REG/Gen_Thirty_Two[2].REGX/Q (XLXI_6/REG/Gen_Thirty_Two[2].REGX/Q)
+     OBUF:I->O                 3.169          XLXN_109_0_OBUF (XLXN_109<0>)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.91 secs
+ 
+--> 
+
+Total memory usage is 286116 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  176 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

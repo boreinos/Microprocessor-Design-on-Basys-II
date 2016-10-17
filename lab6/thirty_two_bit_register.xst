@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Boris_2/Documents/MIPS 445/project2/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Boris_2/Documents/MIPS 445/project2/xst"
+elaborate
+-ifn thirty_two_bit_register.prj
+-ifmt mixed

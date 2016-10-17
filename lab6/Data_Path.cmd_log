@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/Data_Path.xst" -ofn "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/Data_Path.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_ucf(1).ucf -p xc3s100e-cp132-5 "Data_Path.ngc" Data_Path.ngd  
+xst -intstyle ise -ifn "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/Data_Path.xst" -ofn "C:/Users/Boris_2/Documents/MIPS 445/Project4_Boris_Reinosa/lab4/Data_Path.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_ucf(1).ucf -p xc3s100e-cp132-5 "Data_Path.ngc" Data_Path.ngd  

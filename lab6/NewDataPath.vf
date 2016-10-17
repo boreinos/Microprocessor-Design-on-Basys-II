@@ -1,0 +1,86 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : NewDataPath.vf
+// /___/   /\     Timestamp : 10/10/2015 22:37:05
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog "C:/Users/Boris_2/Documents/MIPS 445/project2/NewDataPath.vf" -w "C:/Users/Boris_2/Documents/MIPS 445/project2/NewDataPath.sch"
+//Design Name: NewDataPath
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module NewDataPath(clock, 
+                   reset, 
+                   ALUOut, 
+                   carryout, 
+                   overflow, 
+                   pcout, 
+                   zero);
+
+    input clock;
+    input reset;
+   output [31:0] ALUOut;
+   output carryout;
+   output overflow;
+   output [4:0] pcout;
+   output zero;
+   
+   wire [31:0] inst_out;
+   wire [31:0] Q;
+   wire [31:0] XLXN_29;
+   wire XLXN_37;
+   wire [31:0] XLXN_38;
+   wire [31:0] XLXN_39;
+   wire [3:0] XLXN_40;
+   wire [31:0] ALUOut_DUMMY;
+   
+   assign ALUOut[31:0] = ALUOut_DUMMY[31:0];
+   ALU  XLXI_1 (.A(XLXN_38[31:0]), 
+               .ALUCntl(XLXN_40[3:0]), 
+               .B(XLXN_39[31:0]), 
+               .Carryin(), 
+               .ALUOut(ALUOut_DUMMY[31:0]), 
+               .Carryout(carryout), 
+               .Overflow(overflow), 
+               .Zero(zero));
+   ALUControl  XLXI_2 (.Din(inst_out[5:0]), 
+                      .Dout(XLXN_40[3:0]));
+   PC  XLXI_3 (.clock(clock), 
+              .enable(reset), 
+              .Input(XLXN_29[31:0]), 
+              .pcout(pcout[4:0]), 
+              .Q(Q[31:0]));
+   PCADD  XLXI_4 (.Din(Q[31:0]), 
+                 .Dout(XLXN_29[31:0]));
+   instmem  XLXI_5 (.read_inst(Q[31:0]), 
+                   .inst_out(inst_out[31:0]));
+   regfile  XLXI_6 (.clock(clock), 
+                   .read_reg1(inst_out[25:21]), 
+                   .read_reg2(inst_out[20:16]), 
+                   .RegWrite(XLXN_37), 
+                   .write_data(ALUOut_DUMMY[31:0]), 
+                   .write_reg(inst_out[15:11]), 
+                   .read_data1(XLXN_38[31:0]), 
+                   .read_data2(XLXN_39[31:0]));
+   ControlUnit  XLXI_7 (.Instruction(inst_out[31:26]), 
+                       .ALUop0(), 
+                       .ALUop1(), 
+                       .ALUSrc(), 
+                       .Branch(), 
+                       .MemRead(), 
+                       .MemtoReg(), 
+                       .MemWrite(), 
+                       .RegDst(), 
+                       .RegWrite(XLXN_37));
+endmodule
